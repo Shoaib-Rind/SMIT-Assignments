@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Forms</title>
+    
+  </head>
+  <body>
+      <div class="Main">
+
+        <div class="Box-in">
+          <form action="" onSubmit="submitData(event)">
+            <div>
+              <input id="username" type="text" placeholder="Enter User Name" onInput="inputValid(event)"/>
+              <span class="error"></span>
+            </div>
+            <div>
+              <input id="password" type="text" placeholder="Enter Password"/>
+              <span class="error"></span>
+            </div>
+            
+            <input type="search" id="S-Bar" placeholder="Search Here" oninput="seeSearch(event)"> <br>
+            <input type="submit" class="button1"/>
+          </form>
+              
+        </div>
+
+        <div class="displayData">
+              No Data Found
+         </div>
+    
+        </div>
+      
+
+
+
+
+
+
+
+
+  <script src="./app.js"></script>
+</body>
+</html>
