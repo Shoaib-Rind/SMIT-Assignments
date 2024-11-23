@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    /* width: 100vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font: bold 12px arial, helvetica, sans-serif;
+
+}
+
+
+.clock{
+    border: 1px solid rgb(250, 250, 250);
+    padding: 50px;
+    border-radius: 10px;
+    background-color: #222222;
+    color: rgb(67, 252, 51);
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+.clock:hover{
+    box-shadow: 1px 1px 30px rgb(2, 82, 231);
+    background-color: black;
+}
+  
+#Date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+}
+
+#date{
+    font-size: 20px !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock ul{
+    list-style: none;
+    display: flex;
+    font-size: 90px;
+    gap: 15px;
+}
+
+.Tareekh{
+    letter-spacing: 2px;
+    gap: 10px;
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
