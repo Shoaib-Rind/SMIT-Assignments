@@ -59,9 +59,13 @@ body {
 }
 
 #username, 
+<<<<<<< HEAD
 #password,
 #email,
 #select, 
+=======
+#password, 
+>>>>>>> 26bfb3ec53276c8f57f0fe4ecdb5fe6986be9ca8
 #S-Bar {
   height: 30px; 
   width: 90%; 
@@ -72,7 +76,11 @@ body {
 
 }
 
+<<<<<<< HEAD
 #password,#email,#radio,select {
+=======
+#password {
+>>>>>>> 26bfb3ec53276c8f57f0fe4ecdb5fe6986be9ca8
   margin-top: 10px;
 }
 
