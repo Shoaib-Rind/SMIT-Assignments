@@ -1,0 +1,115 @@
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: scroll;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Comic Sans MS';
+  color: #ff6347;
+  text-shadow: 2px 2px #ffa07a;
+  
+}
+
+form {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+#input-text {
+  width: 250px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+/* To-Do List Container */
+.box {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+/* To-Do Items */
+.box div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+/* #fff240 */
+
+.box div:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input Field for Edit Mode */
+input[type="text"].hide {
+  display: none;
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Paragraph Display for To-Do Items */
+p {
+  flex: 1;
+  margin: 0;
+  font-size: 16px;
+  color: #333;
+  overflow-wrap: break-word;
+}
+
+/* Edit Button */
+button {
+  padding: 5px 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}

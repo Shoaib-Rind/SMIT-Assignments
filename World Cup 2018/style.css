@@ -1,0 +1,85 @@
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: scroll;
+  
+}
+
+.point1{
+  background-color: rgba(0, 0, 0, 0.144);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main{
+  height: 200%;
+  width: 20%;
+  
+}
+.groupDiv{
+  background-color: chartreuse;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  font-size: xx-large;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-parent {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(38, 8, 211, 0.493);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+}
+.modal {
+  height: 300px;
+  width: 50%;
+  background-color: rgb(235, 220, 4);
+  display: flex;
+  box-shadow: 0px 4px 30px;
+
+}
+
+
+.modal-body{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+td{
+  background-color: rgb(219, 55, 252);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  padding: 3px;
+  text-align: center;
+}
+
+th{
+  border: 1px solid blue;
+  background-color: rgb(197, 195, 235);
+  padding: 3px;
+  font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button{
+  border-radius: 100%;
+  margin: 10px;
+  color: rgb(235, 220, 4);
+  border: none;
+  background-color: rgb(235, 220, 4);
+}
