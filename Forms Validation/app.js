@@ -1,8 +1,9 @@
 
 function loginPage(e){
 
-  e.target = window.location.replace('./dashboard.html');
+   window.location.replace('./dashboard.html');
 
+ 
 }
 
  
@@ -140,7 +141,7 @@ function saveData() {
 }
 
 
-function loginDashboard(email, password){
+function loginDashboard(){
 
   let email = document.getElementById('email').value;
   let password = document.getElementById('password').value;
