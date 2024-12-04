@@ -1,5 +1,11 @@
 
+function loginPage(e){
 
+  e.target = window.location.replace('./dashboard.html');
+
+}
+
+ 
 var usernameData = false;
 
 function inputValid(e) {
@@ -27,19 +33,6 @@ function validateEmail(email) {
   return emailRegex.test(email);
 }
 
-// function citySelect(e){
-//   var cityError = document.getElementById('cityError'); 
-//   var selectedValue = e.target.value;
-
-//   if (selected.value === '--Select your City--') {
-//     cityError.innerText = 'Please select a valid city.';
-//     cityError.style.display = 'block';
-//   } else {
-//     cityError.style.display = 'none'; 
-//   }
-
-// }
-
 
 function submitData(e) {
   e.preventDefault();
@@ -52,16 +45,6 @@ function submitData(e) {
 
   
   let isValid = true;
-
-  // if (username.value.length < 3) {
-  //   document.getElementById('usernameError').innerText = 'At least 3 characters required.';
-  //   isValid = false;
-  // }
-
-  // if (password.value.length < 8) {
-  //   document.getElementById('passwordError').innerText = 'Weak password.';
-  //   isValid = false;
-  // }
 
   if (!validateEmail(email.value)) {
     document.getElementById('emailError').innerText = 'Enter a valid email.';
@@ -96,6 +79,7 @@ function submitData(e) {
     studentId: Math.floor(Math.random() * 100000),
   });
 
+  saveData()
   console.log(usersData);
 
   
@@ -107,9 +91,11 @@ function submitData(e) {
   usernameData = false;
 
   alert("Data Submitted Sucessfully")
+
+  window.location.replace('./dashboard.html');
 }
 
-var usersData = [
+var usersData = JSON.parse(localStorage.getItem('usersData')) || [
   { username: 'Ali', password: '123456789000992', email: 'Ali@example.com', studentId: '270176' },
   { username: 'Asharib', password: '1234567890354', email: 'Asharib@example.com', studentId: '430177' },
   { username: 'Shoaib', password: '33434123123123', email: 'Shoaib@example.com', studentId: '34343' },
@@ -145,4 +131,24 @@ function seeSearch(e) {
   }
 
   displayData.style.display = foundUser ? 'block' : 'none';
+}
+
+function saveData() {
+  localStorage.setItem('usersData', JSON.stringify(usersData))
+  console.log(usersData)
+  // renderListItems(); // render updated data in UI
+}
+
+
+function loginDashboard(email, password){
+
+  let email = document.getElementById('email').value;
+  let password = document.getElementById('password').value;
+
+  for (let i = 0; i < usersData.length; i++) {
+    if(password === usersData[i].password && email === usersData[i].email){
+      return usersData[i];
+    }
+  }
+  
 }

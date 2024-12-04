@@ -38,7 +38,7 @@ body {
 }
 
 
-.button1{
+.button1, .button2 {
   border: none;
   height: 40px;
   width: 174px;
