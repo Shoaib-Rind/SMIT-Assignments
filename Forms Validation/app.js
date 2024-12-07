@@ -1,9 +1,17 @@
 
+// var loggedInUser = JSON.parse(localStorage.getItem('login'));
+
+// if (loggedInUser) {
+  
+//   window.location.replace('./index2.html');
+//   document.getElementById('printName').innerText = showName.username;
+// }
+
+
 function loginPage(e){
 
    window.location.replace('./dashboard.html');
 
- 
 }
 
  
@@ -62,12 +70,17 @@ function submitData(e) {
     isValid = false;
   }
 
-  if (!isValid || !usernameData) return;
-
+  if (!isValid) return;
+  // if (!isValid || !usernameData) return;
   
   for (let i = 0; i < usersData.length; i++) {
     if (usersData[i].username.toLocaleLowerCase() === username.value) {
       alert('Username already exists!');
+      return;
+    }
+
+    if (usersData[i].email.toLowerCase() === email.value.toLowerCase()) {
+      alert('Email already exists!');
       return;
     }
   }
@@ -137,7 +150,7 @@ function seeSearch(e) {
 function saveData() {
   localStorage.setItem('usersData', JSON.stringify(usersData))
   console.log(usersData)
-  // renderListItems(); // render updated data in UI
+  
 }
 
 
@@ -148,6 +161,7 @@ function loginDashboard(){
 
   for (let i = 0; i < usersData.length; i++) {
     if(password === usersData[i].password && email === usersData[i].email){
+      localStorage.setItem('login', JSON.stringify(usersData[i]));
       return usersData[i];
     }
   }

@@ -38,7 +38,7 @@ body {
 }
 
 
-.button1, .button2 {
+.button1, .button2, .button3 {
   border: none;
   height: 40px;
   width: 174px;
@@ -50,6 +50,13 @@ body {
 
 }
 
+.butt{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
 .button1:hover {
  
   margin-top: 13px;
