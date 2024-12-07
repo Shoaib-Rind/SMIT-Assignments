@@ -71,7 +71,7 @@ function submitData(e) {
   }
 
   if (!isValid) return;
-  // if (!isValid || !usernameData) return;
+  
   
   for (let i = 0; i < usersData.length; i++) {
     if (usersData[i].username.toLocaleLowerCase() === username.value) {
