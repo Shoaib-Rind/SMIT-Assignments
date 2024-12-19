@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Forms</title>
+    
+  </head>
+  <body>
+      <div class="Main">
+
+        <div class="Box-in">
+          <form action="" onSubmit="submitData(event)">
+            <div>
+              <input id="username" class="username" type="text" placeholder="Enter User Name" onInput="inputValid(event)" />
+              <span class="error" id="usernameError"></span>
+            </div>
+            <div>
+              <input id="password" class="password" type="text" placeholder="Enter Password" onInput="passCheck(event)" />
+              <span class="error"></span>
+            </div>
+            <div>
+              <input id="email" class="email" type="text" placeholder="Enter Email" onInput="alidateEmail(event)"/>
+              <span class="error" id="emailError"></span>
+            </div>
+            <div>
+              <input id="radio" name="gender" type="radio"  checked /> Male
+              <input id="radio" name="gender" type="radio" /> Female
+              <span class="error" id="genderError"></span>
+            </div>
+            <div>
+              <select id="select" name="city" onchange="citySelect(event)" > 
+                <option value="Select" selected >--Select your City--</option>
+                <option value="Karachi">Karachi</option>
+                <option value="lahore">Lahore</option>
+                <option value="islamabad">Islamabad</option>
+              </select> 
+              
+              <span class="error" id="cityError"></span>
+            </div>
+            <input type="search" id="S-Bar" placeholder="Search Here" oninput="seeSearch(event)"> <br>
+            <input type="submit" class="button1"/> <br>
+            <button class="button2" onclick="loginPage(event)">Login</button>
+          </form>
+              
+        </div>
+
+        <div class="displayData">
+              No Data Found
+         </div>
+    
+        </div>
+      
+
+
+
+
+
+
+
+
+  <script src="./app.js"></script>
+</body>
+</html>

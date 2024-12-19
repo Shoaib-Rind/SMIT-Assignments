@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Forms</title>
+    
+  </head>
+  <body>
+      <div class="Main">
+
+
+        <h1>Hello,
+
+        <span id="printName"></span>
+      </h1>
+          
+        </div>
+      
+
+        <div class="butt"><button class="button3" onclick="logout()">Logout</button></div>
+          <script> 
+          var showName = JSON.parse(localStorage.getItem('login'));
+
+          if (showName && showName.username) {
+            // Display the username if logged in
+          document.getElementById('printName').innerText = showName.username;
+        } else {
+            window.location.replace('./dashboard.html'); // Update with your actual login page URL
+              }
+
+
+          function logout() {
+          localStorage.removeItem('login');
+          window.location.replace('./index.html'); // Redirect to login page
+               }
+            </script>
+
+
+
+
+
+              
+  <script src="./app2.js"></script>
+</body>
+</html>

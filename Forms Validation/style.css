@@ -1,0 +1,110 @@
+body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  overflow: scroll;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+}
+
+.Main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  width:100%;
+  gap: 15px;
+}
+
+.Box-in{
+  background-color: white;
+  padding: 30px;
+  margin: 80px;
+  height: auto;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.error{
+  color: red;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-top: -1px;
+}
+
+
+.button1, .button2, .button3 {
+  border: none;
+  height: 40px;
+  width: 174px;
+  margin-top: 10px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #6c5ce7, #74b9ff);
+  background-color: blueviolet;
+  color: white;
+
+}
+
+.butt{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+}
+.button1:hover {
+ 
+  margin-top: 13px;
+  height: 45px;
+  width: 174px;
+  background: linear-gradient(to right, , #74b9ff,#6c5ce7)
+}
+
+#username, 
+#password,
+#email,
+#select, 
+#S-Bar {
+  height: 30px; 
+  width: 90%; 
+  border: 1px solid #d1d5db; 
+  border-radius: 5px; 
+  padding: 5px;
+  font-size: 14px;
+
+}
+
+#password,#email,#radio,select {
+  margin-top: 10px;
+}
+
+#S-Bar {
+  margin-top: 10px;
+}
+
+.displayData{
+  display: none;
+  font-family: 'Times New Roman', Times, serif;
+  width: 90%;
+  margin-top: 20px;
+}
+
+.user-found{
+    border: 2px solid #b2bec3;
+    background-color: #dfe6e9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.user-found h3 {
+  margin: 5px 0;
+  color: #2d3436; 
+}

@@ -1,0 +1,86 @@
+.body{
+        margin: 0;
+        padding: 0;
+        
+    }
+    
+    .Main{
+        height: 100vh;
+        width: 100vw;
+        overflow: scroll;
+        
+    }
+
+
+.Container{
+        background-color: rgb(247,151,0);
+        padding-bottom: 20px;
+}
+
+.main{
+        margin-top: 5px;
+        padding: 20px;
+        box-shadow: -2px 3px 9px rgba(179, 111, 3, 0.884);
+        border-radius: 40px;
+        background-color: rgb(233, 146, 7) ;
+}
+
+.screen-div{
+        /* border: 2px solid rgb(4, 138, 248); */
+        background-color: rgb(113,212,243);
+        box-shadow: -2px 3px 9px rgb(50, 149, 179);
+        width: 420px;
+        height: 120px;
+        border-radius: 30px 30px 30px 30px;
+        color: black;
+        font-family: "Orbitron", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        font-size: 2em;
+        padding-right: 30px;
+        margin-bottom: 20px;
+        text-wrap: wrap;
+}
+
+button{
+        width: 100px;
+        height: 100px;
+        /* margin: 1px; */
+        margin-top: 1px;
+        border-radius: 60px 60px ;
+        font-size: 3em;
+        font-family:monospace;
+        color: white;
+        background-color: black;
+        border: none;
+      
+}
+
+button:hover{
+        background-color: #FBD584;
+        color: black;
+        box-shadow: -2px 4px 3px;
+}
+
+
+.inside-num{
+        /* border: 1px solid rgb(0, 255, 34); */
+        background-color: white;
+        padding: 4px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        border-radius: 40px 40px;
+}
+
+.back{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid red;
+}
