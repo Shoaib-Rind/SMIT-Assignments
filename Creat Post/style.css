@@ -1,0 +1,78 @@
+
+.form{
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  background-color: black; /* Black background */
+  color: white; /* White text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Form container styling */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #333; /* Dark gray background for the form */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Input fields styling */
+.form input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #555; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #222; /* Input background color */
+  color: white; /* Input text color */
+}
+
+.form input::placeholder {
+  color: #aaa; /* Placeholder text color */
+}
+
+.form input:focus {
+  outline: none;
+  border-color: #007bff; /* Highlight border on focus */
+}
+
+/* Button styling */
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  background-color: #007bff; /* Blue background for buttons */
+  transition: background-color 0.3s ease;
+}
+
+#google-signUp {
+  margin-top: 10px; /* Increase the gap specifically for "Sign Up with Google" */
+}
+
+button {
+  margin-bottom: 10px; /* Add spacing below each button */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Spacing and alignment */
+h2 {
+  margin: 20px 0;
+  color: #fff;
+}

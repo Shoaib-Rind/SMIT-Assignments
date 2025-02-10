@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+
+      <div class="dashboard-container">
+        <aside class="sidebar">
+            <h2>Info</h2>
+            <div id="username"></div> 
+            <div class="profile-settings">
+                <h3>Profile Settings</h3>
+                <ul>
+                    <li><a href="#">Edit Profile</a></li>
+                    <li><a href="#">Change Password</a></li>
+                    </ul>
+            </div>
+            <div class="other-info">
+                <h3>Other Information</h3>
+                <p>Additional details can be placed here.</p><br>
+                <button id="logout-btn1">
+                    logout
+                  </button>
+            </div>
+        </aside>
+
+        <main class="content">
+            <h2>Create Post</h2>
+            <div>
+                <textarea id="createPost" placeholder="Write something..."></textarea>
+                <button id="post">Post</button>  </div>
+
+                <div id="allPosts">
+                    <div id="allPostsContainer"> Loading... Please Wait
+                        </div>
+                </div>
+        </main>
+
+        
+        
+        <div class="myposts">
+            <h2>My Posts</h2>
+            <div class="post-list">
+                <ul>
+                    <li>Post 1 content goes here.</li>
+                    <li>Post 2 content goes here.</li>
+                    </ul>
+            </div>
+
+           
+        </div>
+    </div>
+      <script type="module" src="./dashboard.js"></script>
+</body>
+</html>

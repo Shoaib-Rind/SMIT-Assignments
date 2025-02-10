@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="your-favicon.ico" type="image/x-icon">
+    <title>Login Page</title>
+    
+  </head>
+  <body>
+    <div class="main">
+      <div class="form">
+        <!-- <form onSubmit="signUpWithEmailPass(event)"> -->
+          <input id="name" type="text" placeholder="Enter Name" required>
+          <input id="phone" type="phone" placeholder="Enter phone" required>
+          <input id="email" type="text" placeholder="Enter email" required>
+          <input id="password" type="password" placeholder="Enter password" required>
+          <button id="signUp-btn">
+            sign up
+          </button>      
+          <!-- </form> -->
+      </div>
+      <h2>OR</h2>
+      <button id="google-signUp">
+        Sign up with Google
+      </button>
+      
+  
+      <button id="logout-btn">
+        logout
+      </button>
+    </div>
+  
+
+    <script type="module" src="app.js"></script>
+    
+</body>
+</html>
